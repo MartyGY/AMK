@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header {
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.language {
+    height: 63px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 3.5%;
+    font-size: 24px;
+    color: #2F3283;
+}
+
+.language a {
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+.language a:hover {
+    color: #7676EF;
+}
+
+nav {
+    background-color: #6767B1;
+    width: 100%;
+    height: 121px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Стили для выпадающих подменю */
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul ul li {
+    display: block;
+    width: 200px; /* Ширина подменю */
+}
+nav ul ul li a {
+    padding: 10px 15px;
+}
+
+nav ul ul {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: #6767B1;
+}
+
+nav img {
+    width: 50%;
+    max-width: 220px; /* Ensure the logo doesn't get too large */
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px; /* Reduced font size for better fit */
+}
+
+/* Ensure the ul does not exceed the container width */
+nav ul {
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu {
+    display: none;
+}
+
+.menu-button span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(IMG/Background.png);
+    height: 725px;
+    color: #2F3283;
+}
+
+.titles {
+    text-align: right;
+    padding-left: 10%;
+}
+
+.main-content h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.main-content p {
+    margin: 0;
+    font-size: 36px;
+}
+
+.image-container {
+    height: 100%;
+}
+
+.specialties-container {
+    padding: 0 20px;
+    background-color: #6767B1;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+}
+
+.specialties-scroll {
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 0 188px;
+    background-color: white;
+}
+
+.specialty {
+    display: flex;
+    height: 325px;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.specialty:nth-child(odd) {
+    flex-direction: row;
+}
+
+.specialty:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.specialty h3 {
+    color: #2F3283;
+    margin: 0;
+    font-size: 48px;
+}
+
+.specialty p {
+    margin: 0;
+    color: #2F3283;
+    font-size: 20px;
+}
+
+.specialty button {
+    background-color: #6767B1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.specialty .button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.specialty:nth-child(even) .button-container {
+    justify-content: flex-end;
+}
+
+.specialty button:hover {
+    background-color: #7676EF;
+}
+
+.content_specialty {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    height: 155px;
+    color: white;
+}
+
+.icon {
+    margin: 0 30px;
+    padding: 0;
+    height: 100%;
+}
+
+.icon a {
+    margin: 0 auto;
+    font-size: 64px;
+    color: #9799C1;
+    text-decoration: none;
+    font-weight: bolder;
+    display: flex;
+    font-family: "Harmattan";
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: #6767B1;
+    color: white;
+    padding: 50px;
+}
+
+.footer p {
+    margin: 5px;
+    font-size: 28px;
+}
+
+.col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact img {
+    margin: 5px;
+}
+
+.logo img {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.address img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.address iframe {
+    width: 100%;
+    height: 240px;
+    margin-top: 15px;
+}
+
+.politic {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    background: #6767B1;
+    color: white;
+    font-size: 24px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .header {
+        width: 100%;
+    }
+    .header nav {
+        width: 100%;
+    }
+    .titles {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .main-content h1 {
+        font-size: 48px;
+    }
+
+    .main-content p {
+        font-size: 28px;
+    }
+
+    .specialties-scroll {
+        padding: 0 20px;
+    }
+
+    .specialty {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .specialty:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .specialty .button-container {
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer .col {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 36px;
+        margin-top: 60px;
+    }
+    .main-content {
+        padding: 0;
+    }
+    .main-content p {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .main-content img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .specialties-container {
+        max-width: 100%;
+        margin-top: -5px;
+    }
+
+
+    .specialty p {
+        font-size: 18px;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .specialty {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    .specialty a {
+        font-size: 20px;
+    }
+
+    .specialty button {
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .specialty img {
+        width: 50px;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .menu-button {
+        display: flex;
+    }
+    .menu {
+        z-index: 100;
+    }
+
+    nav img {
+        position: absolute;
+        width: 50%;
+        right: 22%;
+    }
+    nav {
+        display: flex;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #6767B1;
+        position: absolute;
+        top: 121px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.menu.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}  
+
+@media (max-width: 768px) {
+    .title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .specialties-container {
+        padding: 10px; /* Уменьшаем внутренний отступ */
+        margin: 0; /* Убираем внешний отступ */
+        box-shadow: none; /* Убираем тень */
+    }
+
+    .specialties-scroll {
+        padding: 0; /* Убираем горизонтальный отступ */
+    }
+
+    .specialty {
+        width: 100%;
+        flex-direction: column; /* Отображаем элементы вертикально */
+        height: auto; /* Высота зависит от контента */
+        margin-bottom: 20px; /* Увеличиваем отступ между специальностями */
+    }
+    .specialty:nth-child(odd) {
+    flex-direction: column;
+    }
+
+    .specialty:nth-child(even) .button-container {
+    justify-content: center;
+    }
+
+    .specialty:nth-child(even) {
+        flex-direction: column; /* Обратный порядок для четных элементов */
+    }
+
+    .icon {
+        margin: 10px 0; /* Уменьшаем отступы вокруг иконки */
+        width: 100px;
+    }
+    .icon img {
+        width: 100px;
+    }
+    .content_specialty {
+        margin-top: 60px;
+    }
+    .specialty h3 {
+        font-size: 30px; /* Уменьшаем размер заголовка */
+        padding: 5px;
+        text-align: center; /* Центрируем текст заголовка */
+    }
+    .button-container {
+        justify-content: center;
+    }
+    .specialty p {
+        font-size: 16px; /* Уменьшаем размер текста */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .button-container {
+        margin-top: 10px; /* Увеличиваем отступ над кнопкой */
+        text-align: center; /* Центрируем кнопку */
+    }
+
+    .specialty button {
+        width: 140px; /* Уменьшаем ширину кнопки */
+        height: 50px; /* Уменьшаем высоту кнопки */
+        font-size: 16px; /* Уменьшаем размер шрифта кнопки */
+    }
+    .dropdown-menu {
+        z-index: 100;
+        margin-top: -80px;
+        text-align: center; /* Центрируем содержимое */
+        border: #fff 2px solid;
+    }
+    .dropdown-menu li{
+        width: 100%;
+    }
+         
+}
+
+      
