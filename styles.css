@@ -383,12 +383,22 @@ nav ul {
 }
 
 @media (max-width: 768px) {
+    .language {
+        height: 30px;
+    }
+    .language a {
+        color: #6767B1;
+    }
+    .language a:hover {
+        color: #7676EF;
+    }
     .main-content h1 {
         font-size: 36px;
         margin-top: 60px;
     }
     .main-content {
         padding: 0;
+        margin-top: 20px;
     }
     .main-content p {
         font-size: 24px;
@@ -434,6 +444,9 @@ nav ul {
 
     .footer p {
         font-size: 20px;
+    }
+    .footer img {
+        margin: 15px 0;
     }
 }
 
@@ -500,6 +513,7 @@ nav ul {
         padding: 10px; /* Уменьшаем внутренний отступ */
         margin: 0; /* Убираем внешний отступ */
         box-shadow: none; /* Убираем тень */
+        margin-top: -5px;
     }
 
     .specialties-scroll {
@@ -562,6 +576,7 @@ nav ul {
         margin-top: -80px;
         text-align: center; /* Центрируем содержимое */
         border: #fff 2px solid;
+        background-color: #7676EF;
     }
     .dropdown-menu li{
         width: 100%;
