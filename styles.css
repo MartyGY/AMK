@@ -441,12 +441,24 @@ nav ul {
     .specialty img {
         width: 50px;
     }
-
-    .footer p {
-        font-size: 20px;
+    .footer {
+        font-size: x-small;
     }
-    .footer img {
+    .footer p {
+        font-size: 15px;
+    }
+    .footer .contact img {
+        width: 20%;
+    }
+    .footer .logo img {
         margin: 15px 0;
+        width: 50%;
+    }
+    .politic {
+        font-size: 15px;
+    }
+    .footer iframe {
+        height: 200px;
     }
 }
 
